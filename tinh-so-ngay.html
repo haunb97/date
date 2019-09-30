@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>date</title>
+</head>
+<body>
+<input id="input" type="number" placeholder="nhập vào số tháng"/>
+<input type="button" onclick="month1()" value="tính số ngày">
+<div id="love"></div>
+<br /><br/>
+
+
+<script>
+    function month1() {
+        let input = parseInt(document.getElementById('input').value)
+        switch (input) {
+            case 1 :
+            case 2:
+            case 3 :
+            case 4 :
+                document.getElementById('love').innerHTML =  'thang '+ input+ ' co 31 ngay';
+                break;
+            case 5 :
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10 :
+            case 11 :
+            case 12:
+                document.getElementById('love').innerHTML = 'thang ' + input +' co 30 ngay';
+                break ;
+
+
+
+        }
+    }
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
